@@ -1,0 +1,15 @@
+useEffect - triggers before component rendering
+  useEffect without dependency array - triggers before component rendering and during state changes
+  useEffect(()=>{
+    console.log("Use Effect Without Dependency Array")
+  })
+
+  useEffect with empty dependency array - triggers before component rendering only for first time
+  useEffect(()=>{
+    console.log("Use Effect With Empty Dependency Array")
+  },[])
+
+  useEffect with dependancy array - triggers before component rendering and specified state changes
+  useEffect(()=>{
+    console.log("Use Effect With Dependency Array")
+  },[batch,mobile])
